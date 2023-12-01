@@ -85,3 +85,17 @@ function removeActive(){
 }
 
 window.addEventListener('scroll', resumeActive);
+
+//portfolio
+let filterItems = document.querySelectorAll('.portfolio_filters li');
+
+function activePortfolio(){
+    filterItems.forEach(el => {
+        el.classList.remove('filter-active');
+        this.classList.add('filter-active');
+    })
+}
+
+filterItems.forEach(el => {
+    el.addEventListener('click', activePortfolio);
+})
