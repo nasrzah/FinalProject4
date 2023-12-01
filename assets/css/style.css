@@ -28,12 +28,11 @@ html {
     border-radius: 10px;
 }
 
-::root {
+:root {
     --main-color: #ff7b00ea;
     --seconds-color: #ffe0c3ea;
     --tittle-color: #222;
     --subtitle-color: #8d8d8d;
-
 }
 
 body {
@@ -204,7 +203,7 @@ header .container {
     cursor: pointer;
     margin-right: 10px;
 }
-@media screen and (main-width: 768px) {
+@media screen and (max-width: 768px) {
     .container {
         padding: 0 30px;
     }    
@@ -220,4 +219,22 @@ header .container {
         transform: translateX(110%);
         box-shadow: -10px 0 20px rgba(0,0,0, .15);
     }
+    .menu.active {
+        transform: translateY(0);
+    }
+    .menu_item{
+        display: block;
+        margin: 20px 0;
+    }
+    .menu_link{
+        color:#333;
+    }
+    .toggle_icon{
+        display: block;
+    }
+    .close_icon{
+        display: block;
+    }
 }
+
+/* Hero section */
